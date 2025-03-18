@@ -40,9 +40,9 @@ page = st.radio(
 
 if page == "CTR Prediction":
     # Load model dan preprocessing tools
-    xgb_model = joblib.load("xgboost_ctr_model.pkl")
-    label_encoder = joblib.load("label_encoders.pkl")
-    label_encoder_target = joblib.load("label_encoder_target.pkl")
+    xgb_model = joblib.load("deployment/xgboost_ctr_model.pkl")
+    label_encoder = joblib.load("deployment/label_encoders.pkl")
+    label_encoder_target = joblib.load("deployment/label_encoder_target.pkl")
 
     # Definisi ulang fitur kategorikal dan numerik
     feature_columns = ['Age', 'Gender', 'Location', 'Platform', 
@@ -120,21 +120,21 @@ elif page == "Team Member":
         st.markdown("### 👥 Signal Data Education Team")
         
         st.markdown("#### 📌 Project Management")
-        st.markdown("- **Abdiel** - [LinkedIn](#)")
+        st.markdown("- **Abdiel W. Goni** - [LinkedIn](https://www.linkedin.com/in/abdielwillyargoni/)")
 
         st.markdown("#### 🤝 Project Support")
-        st.markdown("- Elisabeth Sengkey - [LinkedIn](#)")
-        st.markdown("- Erlita - [LinkedIn](#)")
+        st.markdown("- Elisabeth Sengkey - [LinkedIn](https://www.linkedin.com/in/elisabeth-frida-jufita-sengkey?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)")
+        st.markdown("- Erlita Firlita Ningrat - [LinkedIn](https://www.linkedin.com/in/erlitafirlitaningrat)")
 
         st.markdown("#### 🛠 Data Engineering Team")
-        st.markdown("- Renona - [LinkedIn](#)")
-        st.markdown("- Agung Bakti - [LinkedIn](#)")
+        st.markdown("- Renoka Tresna Pramuda - [LinkedIn](https://www.linkedin.com/in/renoka-tresna-7aba77350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)")
+        st.markdown("- Agung Bakti - [LinkedIn](https://www.linkedin.com/in/agung-bakti-99177330a)")
 
         st.markdown("#### 📊 Data Analytics Team")
-        st.markdown("- Arella - [LinkedIn](#)")
-        st.markdown("- Katerina - [LinkedIn](#)")
-        st.markdown("- Nofrani - [LinkedIn](#)")
+        st.markdown("- Arella B. Lontaan - [LinkedIn](https://www.linkedin.com/in/arella-batya-lontaan-7a82072b8)")
+        st.markdown("- Katerina Taroreh - [LinkedIn](https://www.linkedin.com/in/katerina-taroreh-56438a280/)")
+        st.markdown("- Nofrani Repi - [LinkedIn](https://www.linkedin.com/in/nofranirepi)")
 
         st.markdown("#### 🤖 Machine Learning Team")
-        st.markdown("- Roma Mantiri - [LinkedIn](#)")
-        st.markdown("- Bagas Akbar Maulana - [LinkedIn](#)")
+        st.markdown("- Roma Mantiri - [LinkedIn](https://www.linkedin.com/in/roma-nouke-frets-mantiri-921370235/)")
+        st.markdown("- Bagas Akbar Maulana - [LinkedIn](https://www.linkedin.com/in/bagas-akbar-930496286/)")
